@@ -5,7 +5,7 @@ import StudentForm from "../components/StudentForm";
 const StudentCreate = ({ show, handleClose }) => {
     const handleSubmit = async (values) => {
         try {
-            const res = await axios.post("http://127.0.0.1:5000/api/students", values);
+            const res = await axios.post("/api/students", values);
             if (res.status === 200) {
                 alert("Student successfully created");
                 handleClose();

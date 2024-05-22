@@ -16,7 +16,7 @@ cors = CORS(app, resource={
 logging.basicConfig(level=logging.INFO)
 
 # MongoDB configuration
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("mongodb://mongo_db:27017/")
 db = client["student_db"]
 students_collection = db["students"]
 
@@ -91,4 +91,4 @@ def delete_student(id):
 
 # Run the Flask app
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0',debug=True)

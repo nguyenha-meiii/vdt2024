@@ -7,7 +7,7 @@ const StudentList = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        axios.get(`http://127.0.0.1:5000/api/students/${id}`).then((res) => {
+        axios.get(`/api/students/${id}`).then((res) => {
             if (res.status === 200) {
                 setStudent(res.data);
             } else {

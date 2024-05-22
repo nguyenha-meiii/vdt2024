@@ -8,7 +8,7 @@ const StudentEdit = ({ show, handleClose }) => {
     const { id } = useParams();
 
     useEffect(() => {
-        axios.get(`http://127.0.0.1:5000/api/students/${id}`)
+        axios.get(`/api/students/${id}`)
             .then((res) => {
                 if (res.status === 200) {
                     setInitialValues(res.data);
@@ -24,7 +24,7 @@ const StudentEdit = ({ show, handleClose }) => {
 
     const handleSubmit = (values) => {
         axios
-            .put(`http://127.0.0.1:5000/api/students/${id}`, values)
+            .put(`/api/students/${id}`, values)
             .then((res) => {
                 if (res.status === 200) {
                     alert("Student successfully updated");

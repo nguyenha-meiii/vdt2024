@@ -8,7 +8,7 @@ const StudentDelete = () => {
 
     const handleDelete = () => {
         axios
-            .delete(`http://127.0.0.1:5000/api/students/${id}`)
+            .delete(`/api/students/${id}`)
             .then((res) => {
                 if (res.status === 200) {
                     alert("Student successfully deleted");

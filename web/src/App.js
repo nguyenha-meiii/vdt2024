@@ -19,7 +19,7 @@ const App = () => {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        const response = await axios.get('http://127.0.0.1:5000/api/students');
+        const response = await axios.get('/api/students');
         setStudents(response.data);
       } catch (error) {
         console.error('Error fetching students:', error);
@@ -30,7 +30,7 @@ const App = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await axios.delete(`http://127.0.0.1:5000/api/students/${id}`);
+      const response = await axios.delete(`/api/students/${id}`);
       if (response.status === 200) {
         alert('Student successfully deleted');
         setStudents(students.filter(student => student._id !== id));
