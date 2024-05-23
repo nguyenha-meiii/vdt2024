@@ -24,6 +24,16 @@ jobs:
     - name: Install dependencies
       run: pip install -r API/requirements.txt  
 
+    
+    - name: Set FLASK_APP environment variable
+      run: echo "FLASK_APP=src/app.py" >> $GITHUB_ENV
+
+    - name: Start Flask server
+      run: |
+        nohup flask run --host=0.0.0.0 --port=3000 &  # Start Flask server in the background
+        sleep 10  # Adjust the sleep time based on how long your server needs to start
+
+
     - name: Run unit test
       run: |
         cd API/unit_test
