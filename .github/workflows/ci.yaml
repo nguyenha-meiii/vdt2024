@@ -30,7 +30,7 @@ jobs:
 
     - name: Start Flask server
       run: |
-        nohup flask run --host=0.0.0.0 --port=3000 &  # Start Flask server in the background
+        nohup flask run --host=127.0.0.1 --port=3000 &  # Start Flask server in the background
         sleep 10  # Adjust the sleep time based on how long your server needs to start
 
 
