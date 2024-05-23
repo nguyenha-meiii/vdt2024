@@ -25,4 +25,4 @@ jobs:
       run: pip install -r API/requirements.txt  
 
     - name: Run unit test
-      run: python3 -m unnittest API/unit_test/test_api.py
+      run: python3 -m unittest API/unit_test/test_api.py
