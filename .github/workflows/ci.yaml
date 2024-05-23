@@ -35,4 +35,4 @@ jobs:
     - name: Run unit test
       run: |
         cd API/unit_test
-        python3 -m unittest test_api.py
+        python3 -m unittest test_demo.py
