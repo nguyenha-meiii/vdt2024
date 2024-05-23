@@ -14,12 +14,12 @@ class TestAPI(unittest.TestCase):
             "gender": "Nam",
             "school": "NEUST"
         }
-        res = requests.post(URL_TEST, json=data).json()
+        res = requests.post(URL_TEST, json=data)
         if res.status_code != 200:
             print(f"Error creating student: {res.text}")
 
-        self.assertEqual(res['message'], 'Student created successfully')
-        self._id = res['id']
+        self.assertEqual((res.json())['message'], 'Student created successfully')
+        self._id = (res.json())['id']
 
     def tearDown(self):
         # Delete the sample student created in setUp
