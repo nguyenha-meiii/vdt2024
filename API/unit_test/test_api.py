@@ -15,6 +15,9 @@ class TestAPI(unittest.TestCase):
             "school": "NEUST"
         }
         res = requests.post(URL_TEST, json=data).json()
+        if res.status_code != 200:
+            print(f"Error creating student: {res.text}")
+
         self.assertEqual(res['message'], 'Student created successfully')
         self._id = res['id']
 
