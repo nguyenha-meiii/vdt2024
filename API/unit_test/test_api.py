@@ -2,7 +2,7 @@ import unittest
 import json
 import requests
 
-URL_TEST = "http://0.0.0.0:5001/api/students"
+URL_TEST = "http://python_server:5001/api/students"
 
 # class TestAPI(unittest.TestCase):
 #     def setUp(self):
