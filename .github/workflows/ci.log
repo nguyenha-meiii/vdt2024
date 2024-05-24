@@ -1,0 +1,390 @@
+2024-05-24T05:12:30.7872532Z Current runner version: '2.316.1'
+2024-05-24T05:12:30.7896337Z ##[group]Operating System
+2024-05-24T05:12:30.7896964Z Ubuntu
+2024-05-24T05:12:30.7897410Z 22.04.4
+2024-05-24T05:12:30.7897729Z LTS
+2024-05-24T05:12:30.7898021Z ##[endgroup]
+2024-05-24T05:12:30.7898489Z ##[group]Runner Image
+2024-05-24T05:12:30.7898922Z Image: ubuntu-22.04
+2024-05-24T05:12:30.7899319Z Version: 20240516.1.0
+2024-05-24T05:12:30.7900351Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20240516.1/images/ubuntu/Ubuntu2204-Readme.md
+2024-05-24T05:12:30.7901766Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20240516.1
+2024-05-24T05:12:30.7902606Z ##[endgroup]
+2024-05-24T05:12:30.7903049Z ##[group]Runner Image Provisioner
+2024-05-24T05:12:30.7903550Z 2.0.369.1
+2024-05-24T05:12:30.7903901Z ##[endgroup]
+2024-05-24T05:12:30.7904934Z ##[group]GITHUB_TOKEN Permissions
+2024-05-24T05:12:30.7906480Z Contents: read
+2024-05-24T05:12:30.7906875Z Metadata: read
+2024-05-24T05:12:30.7907550Z Packages: read
+2024-05-24T05:12:30.7908088Z ##[endgroup]
+2024-05-24T05:12:30.7911218Z Secret source: Actions
+2024-05-24T05:12:30.7911772Z Prepare workflow directory
+2024-05-24T05:12:30.8534994Z Prepare all required actions
+2024-05-24T05:12:30.8695433Z Getting action download info
+2024-05-24T05:12:31.0099344Z Download action repository 'actions/checkout@v3' (SHA:f43a0e5ff2bd294095638e18286ca9a3d1956744)
+2024-05-24T05:12:31.1270997Z Download action repository 'actions/setup-python@v4' (SHA:65d7f2d534ac1bc67fcd62888c5f4f3d2cb2b236)
+2024-05-24T05:12:31.3079455Z Complete job name: test
+2024-05-24T05:12:31.4165221Z ##[group]Run actions/checkout@v3
+2024-05-24T05:12:31.4165949Z with:
+2024-05-24T05:12:31.4166309Z   repository: nguyenha-meiii/vdt2024
+2024-05-24T05:12:31.4167042Z   token: ***
+2024-05-24T05:12:31.4167532Z   ssh-strict: true
+2024-05-24T05:12:31.4167958Z   persist-credentials: true
+2024-05-24T05:12:31.4168397Z   clean: true
+2024-05-24T05:12:31.4168866Z   sparse-checkout-cone-mode: true
+2024-05-24T05:12:31.4169396Z   fetch-depth: 1
+2024-05-24T05:12:31.4169786Z   fetch-tags: false
+2024-05-24T05:12:31.4170240Z   lfs: false
+2024-05-24T05:12:31.4170601Z   submodules: false
+2024-05-24T05:12:31.4170990Z   set-safe-directory: true
+2024-05-24T05:12:31.4171502Z ##[endgroup]
+2024-05-24T05:12:31.5887555Z Syncing repository: nguyenha-meiii/vdt2024
+2024-05-24T05:12:31.5889686Z ##[group]Getting Git version info
+2024-05-24T05:12:31.5890733Z Working directory is '/home/runner/work/vdt2024/vdt2024'
+2024-05-24T05:12:31.5891993Z [command]/usr/bin/git version
+2024-05-24T05:12:31.5924718Z git version 2.45.1
+2024-05-24T05:12:31.5948697Z ##[endgroup]
+2024-05-24T05:12:31.5963399Z Temporarily overriding HOME='/home/runner/work/_temp/e5ed4182-1347-4ac1-aefa-f5cda0a9490a' before making global git config changes
+2024-05-24T05:12:31.5965364Z Adding repository directory to the temporary git global config as a safe directory
+2024-05-24T05:12:31.5968594Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/vdt2024/vdt2024
+2024-05-24T05:12:31.6018809Z Deleting the contents of '/home/runner/work/vdt2024/vdt2024'
+2024-05-24T05:12:31.6023750Z ##[group]Initializing the repository
+2024-05-24T05:12:31.6027837Z [command]/usr/bin/git init /home/runner/work/vdt2024/vdt2024
+2024-05-24T05:12:31.6124879Z hint: Using 'master' as the name for the initial branch. This default branch name
+2024-05-24T05:12:31.6126154Z hint: is subject to change. To configure the initial branch name to use in all
+2024-05-24T05:12:31.6128486Z hint: of your new repositories, which will suppress this warning, call:
+2024-05-24T05:12:31.6129956Z hint:
+2024-05-24T05:12:31.6131082Z hint: 	git config --global init.defaultBranch <name>
+2024-05-24T05:12:31.6132421Z hint:
+2024-05-24T05:12:31.6133668Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2024-05-24T05:12:31.6135941Z hint: 'development'. The just-created branch can be renamed via this command:
+2024-05-24T05:12:31.6137463Z hint:
+2024-05-24T05:12:31.6138211Z hint: 	git branch -m <name>
+2024-05-24T05:12:31.6139953Z Initialized empty Git repository in /home/runner/work/vdt2024/vdt2024/.git/
+2024-05-24T05:12:31.6143419Z [command]/usr/bin/git remote add origin https://github.com/nguyenha-meiii/vdt2024
+2024-05-24T05:12:31.6188117Z ##[endgroup]
+2024-05-24T05:12:31.6189425Z ##[group]Disabling automatic garbage collection
+2024-05-24T05:12:31.6191961Z [command]/usr/bin/git config --local gc.auto 0
+2024-05-24T05:12:31.6229453Z ##[endgroup]
+2024-05-24T05:12:31.6230929Z ##[group]Setting up auth
+2024-05-24T05:12:31.6236404Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-05-24T05:12:31.6275145Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-05-24T05:12:31.6649604Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-05-24T05:12:31.6686245Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-05-24T05:12:31.6933050Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2024-05-24T05:12:31.6980731Z ##[endgroup]
+2024-05-24T05:12:31.6981847Z ##[group]Fetching the repository
+2024-05-24T05:12:31.6990135Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +99f9c9771cf93932f4459a51553c3064f4a6a254:refs/remotes/origin/main
+2024-05-24T05:12:31.8643622Z remote: Enumerating objects: 59, done.        
+2024-05-24T05:12:31.8645919Z remote: Counting objects:   1% (1/59)        
+2024-05-24T05:12:31.8647161Z remote: Counting objects:   3% (2/59)        
+2024-05-24T05:12:31.8648353Z remote: Counting objects:   5% (3/59)        
+2024-05-24T05:12:31.8649979Z remote: Counting objects:   6% (4/59)        
+2024-05-24T05:12:31.8651112Z remote: Counting objects:   8% (5/59)        
+2024-05-24T05:12:31.8651750Z remote: Counting objects:  10% (6/59)        
+2024-05-24T05:12:31.8653475Z remote: Counting objects:  11% (7/59)        
+2024-05-24T05:12:31.8655132Z remote: Counting objects:  13% (8/59)        
+2024-05-24T05:12:31.8655963Z remote: Counting objects:  15% (9/59)        
+2024-05-24T05:12:31.8656691Z remote: Counting objects:  16% (10/59)        
+2024-05-24T05:12:31.8657347Z remote: Counting objects:  18% (11/59)        
+2024-05-24T05:12:31.8658117Z remote: Counting objects:  20% (12/59)        
+2024-05-24T05:12:31.8658758Z remote: Counting objects:  22% (13/59)        
+2024-05-24T05:12:31.8659401Z remote: Counting objects:  23% (14/59)        
+2024-05-24T05:12:31.8660112Z remote: Counting objects:  25% (15/59)        
+2024-05-24T05:12:31.8660742Z remote: Counting objects:  27% (16/59)        
+2024-05-24T05:12:31.8661376Z remote: Counting objects:  28% (17/59)        
+2024-05-24T05:12:31.8662083Z remote: Counting objects:  30% (18/59)        
+2024-05-24T05:12:31.8662691Z remote: Counting objects:  32% (19/59)        
+2024-05-24T05:12:31.8663378Z remote: Counting objects:  33% (20/59)        
+2024-05-24T05:12:31.8664128Z remote: Counting objects:  35% (21/59)        
+2024-05-24T05:12:31.8664762Z remote: Counting objects:  37% (22/59)        
+2024-05-24T05:12:31.8665383Z remote: Counting objects:  38% (23/59)        
+2024-05-24T05:12:31.8666101Z remote: Counting objects:  40% (24/59)        
+2024-05-24T05:12:31.8666694Z remote: Counting objects:  42% (25/59)        
+2024-05-24T05:12:31.8667328Z remote: Counting objects:  44% (26/59)        
+2024-05-24T05:12:31.8668047Z remote: Counting objects:  45% (27/59)        
+2024-05-24T05:12:31.8668645Z remote: Counting objects:  47% (28/59)        
+2024-05-24T05:12:31.8669367Z remote: Counting objects:  49% (29/59)        
+2024-05-24T05:12:31.8670040Z remote: Counting objects:  50% (30/59)        
+2024-05-24T05:12:31.8670639Z remote: Counting objects:  52% (31/59)        
+2024-05-24T05:12:31.8671781Z remote: Counting objects:  54% (32/59)        
+2024-05-24T05:12:31.8672449Z remote: Counting objects:  55% (33/59)        
+2024-05-24T05:12:31.8673087Z remote: Counting objects:  57% (34/59)        
+2024-05-24T05:12:31.8673842Z remote: Counting objects:  59% (35/59)        
+2024-05-24T05:12:31.8674477Z remote: Counting objects:  61% (36/59)        
+2024-05-24T05:12:31.8675112Z remote: Counting objects:  62% (37/59)        
+2024-05-24T05:12:31.8675805Z remote: Counting objects:  64% (38/59)        
+2024-05-24T05:12:31.8676448Z remote: Counting objects:  66% (39/59)        
+2024-05-24T05:12:31.8677100Z remote: Counting objects:  67% (40/59)        
+2024-05-24T05:12:31.8677777Z remote: Counting objects:  69% (41/59)        
+2024-05-24T05:12:31.8678424Z remote: Counting objects:  71% (42/59)        
+2024-05-24T05:12:31.8679064Z remote: Counting objects:  72% (43/59)        
+2024-05-24T05:12:31.8679728Z remote: Counting objects:  74% (44/59)        
+2024-05-24T05:12:31.8680372Z remote: Counting objects:  76% (45/59)        
+2024-05-24T05:12:31.8681027Z remote: Counting objects:  77% (46/59)        
+2024-05-24T05:12:31.8681726Z remote: Counting objects:  79% (47/59)        
+2024-05-24T05:12:31.8682313Z remote: Counting objects:  81% (48/59)        
+2024-05-24T05:12:31.8682953Z remote: Counting objects:  83% (49/59)        
+2024-05-24T05:12:31.8683655Z remote: Counting objects:  84% (50/59)        
+2024-05-24T05:12:31.8684239Z remote: Counting objects:  86% (51/59)        
+2024-05-24T05:12:31.8684876Z remote: Counting objects:  88% (52/59)        
+2024-05-24T05:12:31.8685754Z remote: Counting objects:  89% (53/59)        
+2024-05-24T05:12:31.8686389Z remote: Counting objects:  91% (54/59)        
+2024-05-24T05:12:31.8687012Z remote: Counting objects:  93% (55/59)        
+2024-05-24T05:12:31.8687722Z remote: Counting objects:  94% (56/59)        
+2024-05-24T05:12:31.8688325Z remote: Counting objects:  96% (57/59)        
+2024-05-24T05:12:31.8688946Z remote: Counting objects:  98% (58/59)        
+2024-05-24T05:12:31.8689646Z remote: Counting objects: 100% (59/59)        
+2024-05-24T05:12:31.8690297Z remote: Counting objects: 100% (59/59), done.        
+2024-05-24T05:12:31.8691135Z remote: Compressing objects:   1% (1/53)        
+2024-05-24T05:12:31.8692118Z remote: Compressing objects:   3% (2/53)        
+2024-05-24T05:12:31.8692767Z remote: Compressing objects:   5% (3/53)        
+2024-05-24T05:12:31.8693434Z remote: Compressing objects:   7% (4/53)        
+2024-05-24T05:12:31.8694786Z remote: Compressing objects:   9% (5/53)        
+2024-05-24T05:12:31.8696155Z remote: Compressing objects:  11% (6/53)        
+2024-05-24T05:12:31.8697181Z remote: Compressing objects:  13% (7/53)        
+2024-05-24T05:12:31.8698710Z remote: Compressing objects:  15% (8/53)        
+2024-05-24T05:12:31.8700495Z remote: Compressing objects:  16% (9/53)        
+2024-05-24T05:12:31.8701331Z remote: Compressing objects:  18% (10/53)        
+2024-05-24T05:12:31.8702057Z remote: Compressing objects:  20% (11/53)        
+2024-05-24T05:12:31.8702761Z remote: Compressing objects:  22% (12/53)        
+2024-05-24T05:12:31.8703539Z remote: Compressing objects:  24% (13/53)        
+2024-05-24T05:12:31.8704524Z remote: Compressing objects:  26% (14/53)        
+2024-05-24T05:12:31.8705232Z remote: Compressing objects:  28% (15/53)        
+2024-05-24T05:12:31.8706031Z remote: Compressing objects:  30% (16/53)        
+2024-05-24T05:12:31.8706675Z remote: Compressing objects:  32% (17/53)        
+2024-05-24T05:12:31.8708150Z remote: Compressing objects:  33% (18/53)        
+2024-05-24T05:12:31.8709588Z remote: Compressing objects:  35% (19/53)        
+2024-05-24T05:12:31.8710638Z remote: Compressing objects:  37% (20/53)        
+2024-05-24T05:12:31.8711341Z remote: Compressing objects:  39% (21/53)        
+2024-05-24T05:12:31.8712150Z remote: Compressing objects:  41% (22/53)        
+2024-05-24T05:12:31.8712956Z remote: Compressing objects:  43% (23/53)        
+2024-05-24T05:12:31.8713766Z remote: Compressing objects:  45% (24/53)        
+2024-05-24T05:12:31.8714998Z remote: Compressing objects:  47% (25/53)        
+2024-05-24T05:12:31.8715800Z remote: Compressing objects:  49% (26/53)        
+2024-05-24T05:12:31.8716631Z remote: Compressing objects:  50% (27/53)        
+2024-05-24T05:12:31.8717539Z remote: Compressing objects:  52% (28/53)        
+2024-05-24T05:12:31.8718326Z remote: Compressing objects:  54% (29/53)        
+2024-05-24T05:12:31.8719194Z remote: Compressing objects:  56% (30/53)        
+2024-05-24T05:12:31.8720550Z remote: Compressing objects:  58% (31/53)        
+2024-05-24T05:12:31.8721554Z remote: Compressing objects:  60% (32/53)        
+2024-05-24T05:12:31.8722237Z remote: Compressing objects:  62% (33/53)        
+2024-05-24T05:12:31.8723156Z remote: Compressing objects:  64% (34/53)        
+2024-05-24T05:12:31.8723856Z remote: Compressing objects:  66% (35/53)        
+2024-05-24T05:12:31.8724489Z remote: Compressing objects:  67% (36/53)        
+2024-05-24T05:12:31.8725239Z remote: Compressing objects:  69% (37/53)        
+2024-05-24T05:12:31.8725935Z remote: Compressing objects:  71% (38/53)        
+2024-05-24T05:12:31.8726560Z remote: Compressing objects:  73% (39/53)        
+2024-05-24T05:12:31.8727304Z remote: Compressing objects:  75% (40/53)        
+2024-05-24T05:12:31.8727999Z remote: Compressing objects:  77% (41/53)        
+2024-05-24T05:12:31.8728626Z remote: Compressing objects:  79% (42/53)        
+2024-05-24T05:12:31.8729405Z remote: Compressing objects:  81% (43/53)        
+2024-05-24T05:12:31.8730091Z remote: Compressing objects:  83% (44/53)        
+2024-05-24T05:12:31.8730916Z remote: Compressing objects:  84% (45/53)        
+2024-05-24T05:12:31.8731722Z remote: Compressing objects:  86% (46/53)        
+2024-05-24T05:12:31.8732424Z remote: Compressing objects:  88% (47/53)        
+2024-05-24T05:12:31.8733097Z remote: Compressing objects:  90% (48/53)        
+2024-05-24T05:12:31.8733837Z remote: Compressing objects:  92% (49/53)        
+2024-05-24T05:12:31.8734706Z remote: Compressing objects:  94% (50/53)        
+2024-05-24T05:12:31.8735481Z remote: Compressing objects:  96% (51/53)        
+2024-05-24T05:12:31.8736336Z remote: Compressing objects:  98% (52/53)        
+2024-05-24T05:12:31.8737026Z remote: Compressing objects: 100% (53/53)        
+2024-05-24T05:12:31.8737769Z remote: Compressing objects: 100% (53/53), done.        
+2024-05-24T05:12:31.8876160Z remote: Total 59 (delta 1), reused 43 (delta 0), pack-reused 0        
+2024-05-24T05:12:31.9036194Z From https://github.com/nguyenha-meiii/vdt2024
+2024-05-24T05:12:31.9037834Z  * [new ref]         99f9c9771cf93932f4459a51553c3064f4a6a254 -> origin/main
+2024-05-24T05:12:31.9068685Z ##[endgroup]
+2024-05-24T05:12:31.9069503Z ##[group]Determining the checkout info
+2024-05-24T05:12:31.9072157Z ##[endgroup]
+2024-05-24T05:12:31.9072977Z ##[group]Checking out the ref
+2024-05-24T05:12:31.9076514Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2024-05-24T05:12:31.9195205Z Switched to a new branch 'main'
+2024-05-24T05:12:31.9197891Z branch 'main' set up to track 'origin/main'.
+2024-05-24T05:12:31.9204722Z ##[endgroup]
+2024-05-24T05:12:31.9250090Z [command]/usr/bin/git log -1 --format='%H'
+2024-05-24T05:12:31.9282557Z '99f9c9771cf93932f4459a51553c3064f4a6a254'
+2024-05-24T05:12:31.9637451Z ##[group]Run actions/setup-python@v4
+2024-05-24T05:12:31.9638044Z with:
+2024-05-24T05:12:31.9638543Z   python-version: 3.12
+2024-05-24T05:12:31.9639025Z   check-latest: false
+2024-05-24T05:12:31.9639626Z   token: ***
+2024-05-24T05:12:31.9640152Z   update-environment: true
+2024-05-24T05:12:31.9640654Z   allow-prereleases: false
+2024-05-24T05:12:31.9641081Z ##[endgroup]
+2024-05-24T05:12:32.1102581Z ##[group]Installed versions
+2024-05-24T05:12:32.1170421Z Successfully set up CPython (3.12.3)
+2024-05-24T05:12:32.1172305Z ##[endgroup]
+2024-05-24T05:12:32.1304913Z ##[group]Run pip install -r API/requirements.txt
+2024-05-24T05:12:32.1305933Z [36;1mpip install -r API/requirements.txt[0m
+2024-05-24T05:12:32.1393607Z shell: /usr/bin/bash -e {0}
+2024-05-24T05:12:32.1394655Z env:
+2024-05-24T05:12:32.1395204Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-05-24T05:12:32.1396104Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.3/x64/lib/pkgconfig
+2024-05-24T05:12:32.1397133Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-05-24T05:12:32.1397957Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-05-24T05:12:32.1398768Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-05-24T05:12:32.1399664Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.3/x64/lib
+2024-05-24T05:12:32.1400368Z ##[endgroup]
+2024-05-24T05:12:35.8541949Z Collecting Flask (from -r API/requirements.txt (line 1))
+2024-05-24T05:12:35.9040661Z   Downloading flask-3.0.3-py3-none-any.whl.metadata (3.2 kB)
+2024-05-24T05:12:36.2815227Z Collecting pymongo (from -r API/requirements.txt (line 2))
+2024-05-24T05:12:36.2903465Z   Downloading pymongo-4.7.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (22 kB)
+2024-05-24T05:12:36.3268638Z Collecting flask-cors (from -r API/requirements.txt (line 3))
+2024-05-24T05:12:36.3341966Z   Downloading Flask_Cors-4.0.1-py2.py3-none-any.whl.metadata (5.5 kB)
+2024-05-24T05:12:36.4782189Z Collecting pydantic (from -r API/requirements.txt (line 4))
+2024-05-24T05:12:36.4857781Z   Downloading pydantic-2.7.1-py3-none-any.whl.metadata (107 kB)
+2024-05-24T05:12:36.4985049Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 107.3/107.3 kB 10.2 MB/s eta 0:00:00
+2024-05-24T05:12:36.5486219Z Collecting requests (from -r API/requirements.txt (line 5))
+2024-05-24T05:12:36.5561494Z   Downloading requests-2.32.2-py3-none-any.whl.metadata (4.6 kB)
+2024-05-24T05:12:36.5821478Z Collecting mongomock (from -r API/requirements.txt (line 6))
+2024-05-24T05:12:36.5911659Z   Downloading mongomock-4.1.2-py2.py3-none-any.whl.metadata (1.1 kB)
+2024-05-24T05:12:36.6421560Z Collecting Werkzeug>=3.0.0 (from Flask->-r API/requirements.txt (line 1))
+2024-05-24T05:12:36.6494339Z   Downloading werkzeug-3.0.3-py3-none-any.whl.metadata (3.7 kB)
+2024-05-24T05:12:36.6806076Z Collecting Jinja2>=3.1.2 (from Flask->-r API/requirements.txt (line 1))
+2024-05-24T05:12:36.6879396Z   Downloading jinja2-3.1.4-py3-none-any.whl.metadata (2.6 kB)
+2024-05-24T05:12:36.7147104Z Collecting itsdangerous>=2.1.2 (from Flask->-r API/requirements.txt (line 1))
+2024-05-24T05:12:36.7220873Z   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+2024-05-24T05:12:36.7566548Z Collecting click>=8.1.3 (from Flask->-r API/requirements.txt (line 1))
+2024-05-24T05:12:36.7639754Z   Downloading click-8.1.7-py3-none-any.whl.metadata (3.0 kB)
+2024-05-24T05:12:36.7879490Z Collecting blinker>=1.6.2 (from Flask->-r API/requirements.txt (line 1))
+2024-05-24T05:12:36.7970227Z   Downloading blinker-1.8.2-py3-none-any.whl.metadata (1.6 kB)
+2024-05-24T05:12:36.8419932Z Collecting dnspython<3.0.0,>=1.16.0 (from pymongo->-r API/requirements.txt (line 2))
+2024-05-24T05:12:36.8492986Z   Downloading dnspython-2.6.1-py3-none-any.whl.metadata (5.8 kB)
+2024-05-24T05:12:36.8844118Z Collecting annotated-types>=0.4.0 (from pydantic->-r API/requirements.txt (line 4))
+2024-05-24T05:12:36.8915399Z   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+2024-05-24T05:12:37.5325085Z Collecting pydantic-core==2.18.2 (from pydantic->-r API/requirements.txt (line 4))
+2024-05-24T05:12:37.5401151Z   Downloading pydantic_core-2.18.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+2024-05-24T05:12:37.5731343Z Collecting typing-extensions>=4.6.1 (from pydantic->-r API/requirements.txt (line 4))
+2024-05-24T05:12:37.5806961Z   Downloading typing_extensions-4.12.0-py3-none-any.whl.metadata (3.0 kB)
+2024-05-24T05:12:37.6854830Z Collecting charset-normalizer<4,>=2 (from requests->-r API/requirements.txt (line 5))
+2024-05-24T05:12:37.6931916Z   Downloading charset_normalizer-3.3.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (33 kB)
+2024-05-24T05:12:37.7232859Z Collecting idna<4,>=2.5 (from requests->-r API/requirements.txt (line 5))
+2024-05-24T05:12:37.7304545Z   Downloading idna-3.7-py3-none-any.whl.metadata (9.9 kB)
+2024-05-24T05:12:37.7909573Z Collecting urllib3<3,>=1.21.1 (from requests->-r API/requirements.txt (line 5))
+2024-05-24T05:12:37.7984737Z   Downloading urllib3-2.2.1-py3-none-any.whl.metadata (6.4 kB)
+2024-05-24T05:12:37.8322560Z Collecting certifi>=2017.4.17 (from requests->-r API/requirements.txt (line 5))
+2024-05-24T05:12:37.8397595Z   Downloading certifi-2024.2.2-py3-none-any.whl.metadata (2.2 kB)
+2024-05-24T05:12:37.8618226Z Collecting sentinels (from mongomock->-r API/requirements.txt (line 6))
+2024-05-24T05:12:37.8690061Z   Downloading sentinels-1.0.0.tar.gz (4.1 kB)
+2024-05-24T05:12:37.8761638Z   Installing build dependencies: started
+2024-05-24T05:12:39.6826039Z   Installing build dependencies: finished with status 'done'
+2024-05-24T05:12:39.6832397Z   Getting requirements to build wheel: started
+2024-05-24T05:12:39.9304020Z   Getting requirements to build wheel: finished with status 'done'
+2024-05-24T05:12:39.9321705Z   Installing backend dependencies: started
+2024-05-24T05:12:40.6679090Z   Installing backend dependencies: finished with status 'done'
+2024-05-24T05:12:40.6685983Z   Preparing metadata (pyproject.toml): started
+2024-05-24T05:12:40.9288532Z   Preparing metadata (pyproject.toml): finished with status 'done'
+2024-05-24T05:12:40.9627235Z Collecting packaging (from mongomock->-r API/requirements.txt (line 6))
+2024-05-24T05:12:40.9700197Z   Downloading packaging-24.0-py3-none-any.whl.metadata (3.2 kB)
+2024-05-24T05:12:41.0651501Z Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->Flask->-r API/requirements.txt (line 1))
+2024-05-24T05:12:41.0748619Z   Downloading MarkupSafe-2.1.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (3.0 kB)
+2024-05-24T05:12:41.1132005Z Downloading flask-3.0.3-py3-none-any.whl (101 kB)
+2024-05-24T05:12:41.1191772Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 101.7/101.7 kB 24.8 MB/s eta 0:00:00
+2024-05-24T05:12:41.1387629Z Downloading pymongo-4.7.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (686 kB)
+2024-05-24T05:12:41.1560774Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 686.8/686.8 kB 44.9 MB/s eta 0:00:00
+2024-05-24T05:12:41.1634697Z Downloading Flask_Cors-4.0.1-py2.py3-none-any.whl (14 kB)
+2024-05-24T05:12:41.1739026Z Downloading pydantic-2.7.1-py3-none-any.whl (409 kB)
+2024-05-24T05:12:41.1826906Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 409.3/409.3 kB 62.5 MB/s eta 0:00:00
+2024-05-24T05:12:41.1968845Z Downloading pydantic_core-2.18.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+2024-05-24T05:12:41.2195324Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 103.2 MB/s eta 0:00:00
+2024-05-24T05:12:41.2268330Z Downloading requests-2.32.2-py3-none-any.whl (63 kB)
+2024-05-24T05:12:41.2315404Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.9/63.9 kB 21.4 MB/s eta 0:00:00
+2024-05-24T05:12:41.2390185Z Downloading mongomock-4.1.2-py2.py3-none-any.whl (60 kB)
+2024-05-24T05:12:41.2442649Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.0/60.0 kB 16.8 MB/s eta 0:00:00
+2024-05-24T05:12:41.2520667Z Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+2024-05-24T05:12:41.2623200Z Downloading blinker-1.8.2-py3-none-any.whl (9.5 kB)
+2024-05-24T05:12:41.2718359Z Downloading certifi-2024.2.2-py3-none-any.whl (163 kB)
+2024-05-24T05:12:41.2774452Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.8/163.8 kB 44.6 MB/s eta 0:00:00
+2024-05-24T05:12:41.2853745Z Downloading charset_normalizer-3.3.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (141 kB)
+2024-05-24T05:12:41.2911268Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 141.9/141.9 kB 36.6 MB/s eta 0:00:00
+2024-05-24T05:12:41.2982967Z Downloading click-8.1.7-py3-none-any.whl (97 kB)
+2024-05-24T05:12:41.3034649Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 kB 28.9 MB/s eta 0:00:00
+2024-05-24T05:12:41.3106371Z Downloading dnspython-2.6.1-py3-none-any.whl (307 kB)
+2024-05-24T05:12:41.3173141Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 307.7/307.7 kB 64.5 MB/s eta 0:00:00
+2024-05-24T05:12:41.3244930Z Downloading idna-3.7-py3-none-any.whl (66 kB)
+2024-05-24T05:12:41.3293756Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.8/66.8 kB 21.0 MB/s eta 0:00:00
+2024-05-24T05:12:41.3365246Z Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+2024-05-24T05:12:41.3463449Z Downloading jinja2-3.1.4-py3-none-any.whl (133 kB)
+2024-05-24T05:12:41.3523462Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.3/133.3 kB 33.8 MB/s eta 0:00:00
+2024-05-24T05:12:41.3596302Z Downloading typing_extensions-4.12.0-py3-none-any.whl (37 kB)
+2024-05-24T05:12:41.3696019Z Downloading urllib3-2.2.1-py3-none-any.whl (121 kB)
+2024-05-24T05:12:41.3775426Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.1/121.1 kB 19.3 MB/s eta 0:00:00
+2024-05-24T05:12:41.3867363Z Downloading werkzeug-3.0.3-py3-none-any.whl (227 kB)
+2024-05-24T05:12:41.3930092Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 227.3/227.3 kB 51.4 MB/s eta 0:00:00
+2024-05-24T05:12:41.4003194Z Downloading packaging-24.0-py3-none-any.whl (53 kB)
+2024-05-24T05:12:41.4051821Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.5/53.5 kB 15.4 MB/s eta 0:00:00
+2024-05-24T05:12:41.4133006Z Downloading MarkupSafe-2.1.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (28 kB)
+2024-05-24T05:12:41.4406277Z Building wheels for collected packages: sentinels
+2024-05-24T05:12:41.4415884Z   Building wheel for sentinels (pyproject.toml): started
+2024-05-24T05:12:41.6446507Z   Building wheel for sentinels (pyproject.toml): finished with status 'done'
+2024-05-24T05:12:41.6450086Z   Created wheel for sentinels: filename=sentinels-1.0.0-py3-none-any.whl size=3175 sha256=9a87135664cde13500fdb4996f79e1325274dd34c55e4f555eb2516b02b64e37
+2024-05-24T05:12:41.6452184Z   Stored in directory: /home/runner/.cache/pip/wheels/78/22/9f/c7c0b550a3e3cc2854a53357798c72ac1748094889daaf0ebb
+2024-05-24T05:12:41.6471483Z Successfully built sentinels
+2024-05-24T05:12:41.7807427Z Installing collected packages: sentinels, urllib3, typing-extensions, packaging, MarkupSafe, itsdangerous, idna, dnspython, click, charset-normalizer, certifi, blinker, annotated-types, Werkzeug, requests, pymongo, pydantic-core, mongomock, Jinja2, pydantic, Flask, flask-cors
+2024-05-24T05:12:43.4793038Z Successfully installed Flask-3.0.3 Jinja2-3.1.4 MarkupSafe-2.1.5 Werkzeug-3.0.3 annotated-types-0.7.0 blinker-1.8.2 certifi-2024.2.2 charset-normalizer-3.3.2 click-8.1.7 dnspython-2.6.1 flask-cors-4.0.1 idna-3.7 itsdangerous-2.2.0 mongomock-4.1.2 packaging-24.0 pydantic-2.7.1 pydantic-core-2.18.2 pymongo-4.7.2 requests-2.32.2 sentinels-1.0.0 typing-extensions-4.12.0 urllib3-2.2.1
+2024-05-24T05:12:43.9198428Z ##[group]Run echo "FLASK_APP=API/run.py" >> $GITHUB_ENV
+2024-05-24T05:12:43.9199053Z [36;1mecho "FLASK_APP=API/run.py" >> $GITHUB_ENV[0m
+2024-05-24T05:12:43.9259379Z shell: /usr/bin/bash -e {0}
+2024-05-24T05:12:43.9259774Z env:
+2024-05-24T05:12:43.9260315Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-05-24T05:12:43.9260980Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.3/x64/lib/pkgconfig
+2024-05-24T05:12:43.9261638Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-05-24T05:12:43.9262472Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-05-24T05:12:43.9263059Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-05-24T05:12:43.9263663Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.3/x64/lib
+2024-05-24T05:12:43.9264180Z ##[endgroup]
+2024-05-24T05:12:43.9390138Z ##[group]Run nohup flask run --host=0.0.0.0 --port=5001 &  
+2024-05-24T05:12:43.9390876Z [36;1mnohup flask run --host=0.0.0.0 --port=5001 &  [0m
+2024-05-24T05:12:43.9391383Z [36;1msleep 10  [0m
+2024-05-24T05:12:43.9450881Z shell: /usr/bin/bash -e {0}
+2024-05-24T05:12:43.9451265Z env:
+2024-05-24T05:12:43.9451662Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-05-24T05:12:43.9452384Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.3/x64/lib/pkgconfig
+2024-05-24T05:12:43.9453018Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-05-24T05:12:43.9453547Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-05-24T05:12:43.9454256Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-05-24T05:12:43.9455180Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.3/x64/lib
+2024-05-24T05:12:43.9455653Z   FLASK_APP: API/run.py
+2024-05-24T05:12:43.9456120Z ##[endgroup]
+2024-05-24T05:12:44.2707944Z  * Serving Flask app 'API/run.py'
+2024-05-24T05:12:44.2708628Z  * Debug mode: off
+2024-05-24T05:12:44.2716013Z INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2024-05-24T05:12:44.2717059Z  * Running on all addresses (0.0.0.0)
+2024-05-24T05:12:44.2717514Z  * Running on http://127.0.0.1:5001
+2024-05-24T05:12:44.2718080Z  * Running on http://10.1.0.10:5001
+2024-05-24T05:12:44.2718666Z INFO:werkzeug:[33mPress CTRL+C to quit[0m
+2024-05-24T05:12:58.9612397Z ##[group]Run cd API
+2024-05-24T05:12:58.9612827Z [36;1mcd API[0m
+2024-05-24T05:12:58.9613293Z [36;1mpython3 -m unittest unit_test.py[0m
+2024-05-24T05:12:58.9673175Z shell: /usr/bin/bash -e {0}
+2024-05-24T05:12:58.9673708Z env:
+2024-05-24T05:12:58.9674079Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-05-24T05:12:58.9674726Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.3/x64/lib/pkgconfig
+2024-05-24T05:12:58.9675440Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-05-24T05:12:58.9675965Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-05-24T05:12:58.9676539Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.3/x64
+2024-05-24T05:12:58.9677190Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.3/x64/lib
+2024-05-24T05:12:58.9677652Z   FLASK_APP: API/run.py
+2024-05-24T05:12:58.9677993Z ##[endgroup]
+2024-05-24T05:12:59.4197084Z ......
+2024-05-24T05:12:59.4199903Z ----------------------------------------------------------------------
+2024-05-24T05:12:59.4200428Z Ran 6 tests in 0.008s
+2024-05-24T05:12:59.4200828Z 
+2024-05-24T05:12:59.4200939Z OK
+2024-05-24T05:12:59.9085896Z {'doB': '2001', 'fullName': 'Nguyen Van CDE', 'gender': 'Nam', 'no': 22, 'school': 'NEUST'}
+2024-05-24T05:12:59.9623226Z Post job cleanup.
+2024-05-24T05:13:00.0957472Z Post job cleanup.
+2024-05-24T05:13:00.1811670Z [command]/usr/bin/git version
+2024-05-24T05:13:00.1862319Z git version 2.45.1
+2024-05-24T05:13:00.1905189Z Temporarily overriding HOME='/home/runner/work/_temp/4bfb24f8-db4b-4142-a560-5ca0174a6e36' before making global git config changes
+2024-05-24T05:13:00.1907121Z Adding repository directory to the temporary git global config as a safe directory
+2024-05-24T05:13:00.1912822Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/vdt2024/vdt2024
+2024-05-24T05:13:00.1958166Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-05-24T05:13:00.1998060Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-05-24T05:13:00.2257599Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-05-24T05:13:00.2287580Z http.https://github.com/.extraheader
+2024-05-24T05:13:00.2300443Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2024-05-24T05:13:00.2340277Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-05-24T05:13:00.2811968Z Cleaning up orphan processes
+2024-05-24T05:13:00.3186341Z Terminate orphan process: pid (1847) (flask)
