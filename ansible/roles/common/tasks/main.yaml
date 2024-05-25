@@ -1,0 +1,50 @@
+- name: Update Homebrew and upgrade all packages
+  become: true
+  homebrew:
+    state: latest
+    update_homebrew: yes
+    upgrade_all: yes
+  become_user: "{{ ansible_user }}"
+
+- name: Install required system packages
+  become: true
+  homebrew:
+    name:
+      - wget
+      - curl
+      - gnupg
+      - python3
+      - python-ply
+    state: latest
+  become_user: "{{ ansible_user }}"
+
+# Đoạn kiểm tra xem Docker đã được cài đặt hay chưa
+- name: Check to see if Docker is installed
+  command: brew list --cask docker
+  register: result
+  ignore_errors: true
+  changed_when: false
+
+# Cài đặt Docker nếu chưa được cài đặt
+- name: Try to install the Docker cask
+  community.general.homebrew:
+    name: docker
+    install_options: --cask
+    state: present
+  when: result.rc != 0  # Sử dụng result.rc để kiểm tra kết quả lệnh trước đó
+  become_user: "{{ ansible_user }}"
+
+# Cài đặt Docker Compose
+- name: Install Docker Compose
+  community.general.homebrew:
+    name: docker-compose
+    state: present
+  become_user: "{{ ansible_user }}"
+
+# Cài đặt Docker Module cho Python
+- name: Install Docker Module for Python
+  become: true
+  pip:
+    name: docker
+    executable: pip3
+  become_user: "{{ ansible_user }}"
