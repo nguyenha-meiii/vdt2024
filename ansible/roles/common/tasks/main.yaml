@@ -22,7 +22,3 @@
     name: docker
     state: started
     enabled: yes
-    
-- name: Install Docker Module for Python
-  pip:
-    name: docker
