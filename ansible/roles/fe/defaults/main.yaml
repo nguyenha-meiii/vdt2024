@@ -1,2 +1,2 @@
 NETWORK_NAME: fe-be
-IMAGE_NAME: baofci/chiha_web:latest
+IMAGE_NAME: hantmei/vdt_midterm-nginx_server 
