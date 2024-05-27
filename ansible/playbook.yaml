@@ -5,5 +5,5 @@
     - role: common
     - role: db
     - role: be
-    - role: web
+    - role: fe
     
