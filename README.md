@@ -320,14 +320,19 @@ Output log của 2 luồng CD:
 - [web_cd.log](https://github.com/nguyenha-meiii/vdt_midterm_web/blob/main/.github/workflows/cd.log)
 - [api_cd.log](https://github.com/nguyenha-meiii/vdt_midterm_api/blob/main/.github/workflows/cd.log)
 
+Ảnh chụp
+![img](./assets/3_cd_web.png)
+![img](./assets/3_cd_api.png
+)
 Hình ảnh diff khi argoCD phát hiện thay đổi ở config repo:
+
+![img](./assets/3_diff_web.png)
 
 ![img](./assets/3_diff_api.png)
 
-![img]()
-
 Danh sách event trong app
-![img](./assets/3_events_api.png)
+![img](./assets/3_web_events.png)
+![img](./assets/)
 
 ## 8. Monitoring
 
